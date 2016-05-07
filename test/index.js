@@ -1,6 +1,5 @@
 import test from 'ava'
-import rr from 'reduce-reducers'
-import frr from '../'
+import {frr, rr} from '../index.js'
 
 test('It works', (t) => {
   const reducer = frr(
