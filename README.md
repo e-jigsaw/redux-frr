@@ -54,13 +54,13 @@ const reducerB = rr(reducer1, reducer2)
 
 It looks pretty simple.
 
-Works with initial state:
+## Works with initial state
 
 ```js
 rr((state = init) => state, reducer1, reducer2)
 ```
 
-Full example:
+## Full example
 
 ```js
 // init.js
