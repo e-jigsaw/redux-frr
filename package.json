@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "Redux Filter and Reduce Reducers",
   "main": "build/index.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "babel index.js -d build",
     "prepublish": "npm run build",
