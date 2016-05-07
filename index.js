@@ -1,8 +1,7 @@
 import {filterActions} from 'redux-ignore'
 import _rr from 'reduce-reducers'
 
-export function frr (...args) {
-  const [type, ...reducers] = args
+export function frr (type, ...reducers) {
   return filterActions(_rr.apply(this, reducers), [type])
 }
 
