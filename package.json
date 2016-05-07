@@ -1,6 +1,6 @@
 {
   "name": "redux-frr",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Redux Filter and Reduce Reducers",
   "main": "build/index.js",
   "scripts": {
