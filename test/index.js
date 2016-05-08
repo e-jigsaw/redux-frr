@@ -46,3 +46,24 @@ test('Works with initial state', (t) => {
   })
   t.is(result, 0, 'Initial state setted')
 })
+
+test('Multiple filter', (t) => {
+  const reducer = frr(
+    ['valid1', 'valid2'],
+    (state, action) => {
+      return state + 1
+    }
+  )
+  const r1 = reducer(0, {
+    type: 'valid1'
+  })
+  t.is(r1, 1, 'First fire')
+  const r2 = reducer(1, {
+    type: 'valid2'
+  })
+  t.is(r2, 2, 'Second fire')
+  const r3 = reducer(2, {
+    type: 'invalid'
+  })
+  t.is(r3, 2, 'Not fire')
+})

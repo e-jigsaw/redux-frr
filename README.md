@@ -114,8 +114,8 @@ export default combineReducers({reducer})
 
 ## `frr(type, ...reducers)`
 
-* type: `action.type`
-* reducers: `Function`
+* type: `ActionType` || `[ActionType]`
+* reducers: `[Function]`
 
 ### Example
 
@@ -125,7 +125,7 @@ frr('action/x', fn1, fn2, fn3)
 
 ## `rr(...reducers)`
 
-* reducers: `Function`
+* reducers: `[Function]`
 
 Using https://github.com/acdlite/reduce-reducers . Thanks to @acdlite .
 
